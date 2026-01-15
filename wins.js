@@ -1,6 +1,7 @@
-export const currentStreak = 9;
+export const currentStreak = 10;
 
 export const longestStreak = 35;
+
 
 
 
