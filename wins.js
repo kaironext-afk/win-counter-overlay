@@ -1,4 +1,5 @@
-export const currentStreak = 5;
+export const currentStreak = 6;
 
 export const longestStreak = 35;
+
 
