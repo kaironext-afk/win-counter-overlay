@@ -3,7 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Win Streak Overlay</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+    /* Spazio fra i caratteri */
+* { 
+   letter-spacing: 1.5px !important;
+  } 
+body {
+    margin: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+   #panel {
+    background-image:url(banne3.gif);
+    background-position: center;
+    background-size: cover;
+    padding: 25px 22px;
+    border-radius: 12px;
+    border: 3px solid #8000ff;
+    box-shadow: 0 0 25px #8000ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    height: 30px;
+}
+
+/* Scritta principale */
+#main-label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Impact', sans-serif; 
+    color: yellow;
+    letter-spacing: 2px;
+	text-shadow:
+    0 0 4px purple,
+    0 0 8px black,
+    0 0 12px purple;
+}
+/* Blocchi secondari */
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Etichette sopra */
+.label {
+    font-size: 21px;
+    font-family: 'Impact', sans-serif; 
+    color: yellow;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+	border-radius: 12px;
+	text-shadow:
+    0 0 4px purple,
+    0 0 8px black,
+    0 0 12px purple;
+	
+}
+
+/* Numeri sotto */
+.value {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif; 
+    color: yellow;
+	text-shadow:
+    0 0 4px purple,
+    0 0 8px black,
+    0 0 12px purple;
+}
+
+/*  Animazione */
+.animate-pop {
+    animation: pop 1.5s ease-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); text-shadow: 0 0 10px #8000ff; }
+    50% { transform: scale(1.25); text-shadow: 0 0 30px #8000ff; }
+    100% { transform: scale(1); text-shadow: 0 0 10px #8000ff; }
+}
+    </style>
 </head>
 <body>
 
