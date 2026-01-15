@@ -5,7 +5,6 @@
 body {
     margin: 0;
     background: transparent;
-    font-family: 'Impact', sans-serif; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +30,7 @@ body {
 #main-label {
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Impact', sans-serif; 
     color: yellow;
     letter-spacing: 2px;
 	text-shadow:
@@ -48,6 +48,7 @@ body {
 /* Etichette sopra */
 .label {
     font-size: 21px;
+    font-family: 'Impact', sans-serif; 
     color: yellow;
     margin-bottom: 5px;
     letter-spacing: 1px;
@@ -61,8 +62,9 @@ body {
 
 /* Numeri sotto */
 .value {
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bold;
+    font-family: sans-serif; 
     color: yellow;
 	text-shadow:
     0 0 4px purple,
